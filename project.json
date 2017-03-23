@@ -1,0 +1,380 @@
+{
+	"description" : "Google maps and street view on your desktop!\n\nRequires an internet connection!",
+	"file" : "index.html",
+	"general" :
+	{
+		"properties" :
+		{
+			"schemecolor" :
+			{
+				"order" : 1,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"latitude" :
+			{
+				"max" : 78,
+				"min" : -78,
+				"order" : 3,
+				"text" : "Default Latitude",
+				"type" : "slider",
+				"value" : 41
+			},
+			"longitude" :
+			{
+				"max" : 110,
+				"min" : -110,
+				"order" : 3,
+				"text" : "Default Longitude",
+				"type" : "slider",
+				"value" : 29
+			},
+			"mapZoom" :
+			{
+				"max" : 20,
+				"min" : 3,
+				"order" : 4,
+				"text" : "Map Zoom",
+				"type" : "slider",
+				"value" : 4
+			},
+			"mapType" :
+			{
+				"order" : 5,
+				"text" : "Map Type",
+				"type" : "combo",
+				"value" : "roadmap",
+				"options" :
+				[
+					{
+						"label" : "Map",
+						"value" : "roadmap"
+					},
+					{
+						"label" : "Map&Terrains",
+						"value" : "terrain"
+					},
+					{
+						"label" : "Satellite",
+						"value" : "satellite"
+					},
+					{
+						"label" : "Hybrid",
+						"value" : "hybrid"
+					}
+				]
+			},
+			"zoomControl" :
+			{
+				"order" : 6,
+				"text" : "Zoom Control",
+				"type" : "bool",
+				"value" : true
+			},
+			"mapTypeControl" :
+			{
+				"order" : 7,
+				"text" : "Map Type Control",
+				"type" : "bool",
+				"value" : true
+			},
+			"streetViewControl" :
+			{
+				"order" : 8,
+				"text" : "SteetView Control",
+				"type" : "bool",
+				"value" : true
+			},
+			"zoomControlPos" :
+			{
+			  "options" :
+			  [
+			    {
+			      "label" : "TOP-L",
+			      "value" : 1
+			    },
+			    {
+			      "label" : "TOP-C",
+			      "value" : 2
+			    },
+			    {
+			      "label" : "TOP-R",
+			      "value" : 3
+			    },
+			    {
+			      "label" : "LEFT-C",
+			      "value" : 4
+			    },
+			    {
+			      "label" : "RIGHT-C",
+			      "value" : 8
+			    },
+			    {
+			      "label" : "BOTTOM-L",
+			      "value" : 6
+			    },
+			    {
+			      "label" : "BOTTOM-C",
+			      "value" : 11
+			    },
+			    {
+			      "label" : "BOTTOM-R",
+			      "value" : 9
+			    }
+			  ],
+			  "order" : 9,
+			  "text" : "Zoom Position",
+			  "type" : "combo",
+			  "value" : 8
+			},
+
+			"mapTypeControlPos" :
+			{
+			  "options" :
+			  [
+			    {
+			      "label" : "TOP-L",
+			      "value" : 1
+			    },
+			    {
+			      "label" : "TOP-C",
+			      "value" : 2
+			    },
+			    {
+			      "label" : "TOP-R",
+			      "value" : 3
+			    },
+			    {
+			      "label" : "LEFT-C",
+			      "value" : 4
+			    },
+			    {
+			      "label" : "RIGHT-C",
+			      "value" : 8
+			    },
+			    {
+			      "label" : "BOTTOM-L",
+			      "value" : 6
+			    },
+			    {
+			      "label" : "BOTTOM-C",
+			      "value" : 11
+			    },
+			    {
+			      "label" : "BOTTOM-R",
+			      "value" : 9
+			    }
+			  ],
+			  "order" : 10,
+			  "text" : "Map Type Position",
+			  "type" : "combo",
+			  "value" : 2
+			},
+
+			"streetViewControlPos" :
+			{
+			  "options" :
+			  [
+			    {
+			      "label" : "TOP-L",
+			      "value" : 1
+			    },
+			    {
+			      "label" : "TOP-C",
+			      "value" : 2
+			    },
+			    {
+			      "label" : "TOP-R",
+			      "value" : 3
+			    },
+			    {
+			      "label" : "LEFT-C",
+			      "value" : 4
+			    },
+			    {
+			      "label" : "RIGHT-C",
+			      "value" : 8
+			    },
+			    {
+			      "label" : "BOTTOM-L",
+			      "value" : 6
+			    },
+			    {
+			      "label" : "BOTTOM-C",
+			      "value" : 11
+			    },
+			    {
+			      "label" : "BOTTOM-R",
+			      "value" : 9
+			    }
+			  ],
+			  "order" : 11,
+			  "text" : "StreetView Position",
+			  "type" : "combo",
+			  "value" : 2
+			},
+
+			"compassControl" :
+			{
+				"order" : 14,
+				"text" : "StreetView Compass Control",
+				"type" : "bool",
+				"value" : true
+			},
+
+			"svZoomControl" :
+			{
+				"order" : 12,
+				"text" : "StreetView Zoom Control",
+				"type" : "bool",
+				"value" : true
+			},
+
+			"addressControl" :
+			{
+				"order" : 13,
+				"text" : "StreetView Address Control",
+				"type" : "bool",
+				"value" : true
+			},
+
+			"panControlPos" :
+			{
+			  "options" :
+			  [
+			    {
+			      "label" : "TOP-L",
+			      "value" : 1
+			    },
+			    {
+			      "label" : "TOP-C",
+			      "value" : 2
+			    },
+			    {
+			      "label" : "TOP-R",
+			      "value" : 3
+			    },
+			    {
+			      "label" : "LEFT-C",
+			      "value" : 4
+			    },
+			    {
+			      "label" : "RIGHT-C",
+			      "value" : 8
+			    },
+			    {
+			      "label" : "BOTTOM-L",
+			      "value" : 6
+			    },
+			    {
+			      "label" : "BOTTOM-C",
+			      "value" : 11
+			    },
+			    {
+			      "label" : "BOTTOM-R",
+			      "value" : 9
+			    }
+			  ],
+			  "order" : 17,
+			  "text" : "StreetView Compass",
+			  "type" : "combo",
+			  "value" : 2
+			},
+
+			"svZoomControlPos" :
+			{
+			  "options" :
+			  [
+			    {
+			      "label" : "TOP-L",
+			      "value" : 1
+			    },
+			    {
+			      "label" : "TOP-C",
+			      "value" : 2
+			    },
+			    {
+			      "label" : "TOP-R",
+			      "value" : 3
+			    },
+			    {
+			      "label" : "LEFT-C",
+			      "value" : 4
+			    },
+			    {
+			      "label" : "RIGHT-C",
+			      "value" : 8
+			    },
+			    {
+			      "label" : "BOTTOM-L",
+			      "value" : 6
+			    },
+			    {
+			      "label" : "BOTTOM-C",
+			      "value" : 11
+			    },
+			    {
+			      "label" : "BOTTOM-R",
+			      "value" : 9
+			    }
+			  ],
+			  "order" : 15,
+			  "text" : "StreetView Zoom",
+			  "type" : "combo",
+			  "value" : 8
+			},
+
+			"addressControlPos" :
+			{
+			  "options" :
+			  [
+			    {
+			      "label" : "TOP-L",
+			      "value" : 1
+			    },
+			    {
+			      "label" : "TOP-C",
+			      "value" : 2
+			    },
+			    {
+			      "label" : "TOP-R",
+			      "value" : 3
+			    },
+			    {
+			      "label" : "LEFT-C",
+			      "value" : 4
+			    },
+			    {
+			      "label" : "RIGHT-C",
+			      "value" : 8
+			    },
+			    {
+			      "label" : "BOTTOM-L",
+			      "value" : 6
+			    },
+			    {
+			      "label" : "BOTTOM-C",
+			      "value" : 11
+			    },
+			    {
+			      "label" : "BOTTOM-R",
+			      "value" : 9
+			    }
+			  ],
+			  "order" : 16,
+			  "text" : "StreetView Address",
+			  "type" : "combo",
+			  "value" : 2
+			}
+
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Abstract" ],
+	"title" : "Google Maps",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 885175392
+}
