@@ -2,6 +2,8 @@
 
 Only for Windows! Because Wallpaper Engine exist only for windows.
 
+Requires an internet connection!
+
 * [Wallpaper Engine](http://store.steampowered.com/app/431960/).
 * Look at [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=885175392).
 
